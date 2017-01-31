@@ -1,7 +1,7 @@
 <img alt="Logo" src="http://coderslab.pl/wp-content/themes/coderslab/svg/logo-coderslab.svg" width="400">
 
 
-# Warsztaty: podstawy programowania w Ruby
+# Warsztaty: podstawy programowania w Javie
 > Kilka ważnych informacji
 
 Przed przystąpieniem do rozwiązywania zadań przeczytaj poniższe wskazówki
