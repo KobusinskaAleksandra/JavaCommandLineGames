@@ -53,6 +53,21 @@ Napisz program, który:
 * wylosuje 6 liczb z zakresu i wyświetli je na ekranie,
 * poinformuje gracza, czy trafił przynajmniej "trójkę".
 
+Aby wylosować 6 liczb z zakresu 1-49 bez powtórzeń możemy utworzyć tablicę z wartościami 1-49, wymieszać jej zawartość i pobrać pierwsze 6 elementów.
+
+Poniższy kod powinien Ci pomóc:
+```java
+Integer[] arr = new Integer[49];
+for (int i = 0; i < arr.length; i++) {
+	arr[i] = i;
+}
+System.out.println(Arrays.toString(arr));
+Collections.shuffle(Arrays.asList(arr));
+System.out.println(Arrays.toString(arr));
+```
+
+Możesz również losować liczby z określonego zakresu (sprawdź w snippetach jak to wykonać) - jeżeli wybierzesz takie rozwiązanie, pamiętaj o sprawdzaniu czy dana wartość nie została wcześniej wylosowana.
+
 #### Warsztat: Gra w zgadywanie liczb 2
 
 Odwróćmy teraz sytuację z warsztatu "Gra w zgadywanie liczb": to użytkownik pomyśli sobie liczbę z zakresu 1-1000, a komputer będzie zgadywał i zrobi to maksymalnie w 10 ruchach (pod warunkiem, że gracz nie będzie oszukiwał).
