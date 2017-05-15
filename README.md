@@ -9,7 +9,7 @@ Przed przystąpieniem do rozwiązywania zadań przeczytaj poniższe wskazówki
 ## Jak zacząć?
 
 1. Stwórz [*repozytorium*][create-repo] dla projektu o nazwie `Warsztaty1`.
-2. Utwórz projekt za pomocą Twojego ide.
+2. Utwórz projekt za pomocą Twojego ide. Dla każdego zadania utwórz oddzielny pakiet.
 3. Zainicjuj repozytorium w swoim folderze z projektem. (wystarczy folder **src**). Instrukcja krok po kroku zostanie wyświetlona na Github, po utworzeniu pustego repozytorium.
 4. Rozwiąż zadania i [*skomituj*][ref-commit] zmiany do swojego repozytorium.
 5. [*Wypchnij*][ref-push] zmiany do swojego repozytorium na GitHubie.
