@@ -8,7 +8,7 @@ Przed przystąpieniem do rozwiązywania zadań przeczytaj poniższe wskazówki
 
 ## Jak zacząć?
 
-1. Stwórz [*repozytorium*][create-repo] dla projektu.
+1. Stwórz [*repozytorium*][create-repo] dla projektu o nazwie `Warsztaty1`.
 2. Utwórz projekt za pomocą Twojego ide.
 3. Zainicjuj repozytorium w swoim folderze z projektem. (wystarczy folder **src**). Instrukcja krok po kroku zostanie wyświetlona na Github, po utworzeniu pustego repozytorium.
 4. Rozwiąż zadania i [*skomituj*][ref-commit] zmiany do swojego repozytorium.
@@ -142,5 +142,3 @@ try {
 [ref-commit]: http://gitref.org/basic/#commit
 [ref-push]: http://gitref.org/remotes/#push
 [pull-request]: https://help.github.com/articles/creating-a-pull-request
-
-**Repozytorium z ćwiczeniami zostanie usunięte 2 tygodnie po zakończeniu kursu. Spowoduje to też usunięcie wszystkich forków, które są zrobione z tego repozytorium.**
