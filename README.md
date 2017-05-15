@@ -8,10 +8,11 @@ Przed przystąpieniem do rozwiązywania zadań przeczytaj poniższe wskazówki
 
 ## Jak zacząć?
 
-1. Stwórz [*fork*][forking] repozytorium z zadaniami.
-2. [*Sklonuj*][ref-clone] repozytorium na swój komputer.
-3. Rozwiąż zadania i [*skomituj*][ref-commit] zmiany do swojego repozytorium.
-4. [*Wypchnij*][ref-push] zmiany do swojego repozytorium na GitHubie.
+1. Stwórz [*repozytorium*][create-repo] dla projektu.
+2. Utwórz projekt za pomocą Twojego ide.
+3. Zainicjuj repozytorium w swoim folderze z projektem. (wystarczy folder **src**). Instrukcja krok po kroku zostanie wyświetlona na Github, po utworzeniu pustego repozytorium.
+4. Rozwiąż zadania i [*skomituj*][ref-commit] zmiany do swojego repozytorium.
+5. [*Wypchnij*][ref-push] zmiany do swojego repozytorium na GitHubie.
 5. Stwórz [*pull request*][pull-request] do oryginalnego repozytorium, gdy skończysz wszystkie zadania.
 
 
@@ -99,7 +100,7 @@ __Przykłady:__
 
 Napisz funkcję, która:
 
-* przyjmie w parametrze taki kod w postaci stringa,
+* przyjmie w parametrze taki kod w postaci String,
 * rozpozna wszystkie dane wejściowe:
     * rodzaj kostki,
     * liczbę rzutów,
@@ -109,7 +110,33 @@ Napisz funkcję, która:
 Typy kostek występujące w grach: D3, D4, D6, D8, D10, D12, D20, D100.
 
 
+#### Warsztat: Wyszukiwarka najpopularniejszych słów
+
+1. Zaimportuj do projektu bibliotekę jsoup, możesz ją pobrać z adresu: https://jsoup.org/download.
+2. Wyszukaj w popularnych serwisach internetowych nagłówków artykułów,
+ a następnie zapisz pojedyncze słowa w nich występujące do pliku o nazwie `popular_words.txt`.
+Przykład pobrania tytułów z tagu html **span** z atrybutem class o wartości **title**
+````java
+Connection connect = Jsoup.connect("http://www.onet.pl/");
+try {
+    Document document = connect.get();
+    Elements links = document.select("span.title");
+    for (Element elem : links) {
+        System.out.println(elem.text());
+    }
+} catch (IOException e) {
+    e.printStackTrace();
+}
+
+````
+3. Wywołaj pobieranie dla wybranych serwisów internetowych.
+4. Wczytaj utworzony plik `popular_words.txt` i na jego podstawie utwórz plik `most_popular_words.txt`,
+ który zawierać będzie 10 najbardziej popularnych słów.
+5. Utwórz tablicę elementów wykluczonych np. **i**, **lub** , ewentualnie pomiń wszystkie elementy 3-znakowe. 
+
+
 <!-- Links -->
+[create-repo]: https://help.github.com/articles/create-a-repo/
 [forking]: https://guides.github.com/activities/forking/
 [ref-clone]: http://gitref.org/creating/#clone
 [ref-commit]: http://gitref.org/basic/#commit
