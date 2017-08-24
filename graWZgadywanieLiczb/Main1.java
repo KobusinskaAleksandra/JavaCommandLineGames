@@ -8,8 +8,7 @@ public class Main1 {
 	public static void main(String[] args) {
 		zgadnijLiczbe();	
 	}
-	
-	
+		
 	static void zgadnijLiczbe () {
 		Scanner input = new Scanner (System.in);
 		Random rand = new Random();
@@ -39,6 +38,4 @@ public class Main1 {
  }
     	
     	
-    	
-		
-
+  
